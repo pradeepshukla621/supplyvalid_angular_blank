@@ -1,0 +1,18 @@
+
+
+footer {
+    text-align : center;
+  }
+  
+  /* slide in from the bottom */
+  @keyframes slideOutLeft {
+      to      { transform: translateX(-100%); }
+  }
+  
+  /* scale up */
+  @keyframes scaleUp {
+      from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+  }
+  
+  .ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+  .ng-leav           { animation: slideOutLeft 0.2s both ease-in; z-index: 9999; }
